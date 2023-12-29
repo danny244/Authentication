@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { avatar } from "../assets"
+import { profile } from "../assets"
 import styles from '../styles/username.module.css'
 import { useFormik } from "formik"
 import { usernameValidate } from "../helpers/validate"
@@ -25,7 +25,7 @@ function Username() {
   )
 
   return (
-    <div className="container mx-auto">
+    <div className="w-fit h-fit mx-auto">
 
       <Toaster position="top-center" reverseOrder={false}></Toaster>
 
@@ -41,7 +41,7 @@ function Username() {
 
           <form className='py-1' onSubmit={formik.handleSubmit}>
             <div className='profile flex justify-center py-4'>
-              <img src={avatar} className={styles.profile_img} alt="avatar" />
+              <img src={profile} className={styles.profile_img} alt="avatar" />
             </div>
 
             <div className="textbox flex flex-col items-center gap-6">
